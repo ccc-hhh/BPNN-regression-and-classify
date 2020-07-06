@@ -5,7 +5,7 @@ from sklearn.manifold import TSNE
 
 # 数据
 x_train, x_test, y_train, y_test = DataSet_Random(0)
-# 转换为one-hot标签
+
 y_data = torch.from_numpy(y_train).clone().detach().long()
 x_data = torch.from_numpy(normalized(x_train)).clone().detach().float()
 
